@@ -1,3 +1,10 @@
+# Dlaczego Vite zamiast CRA:
+* większa szybkość w budowaniu samego projektu, 
+* mozliwości konfiguracji na starcie są zdecydowanie większe
+* większa szybkość w przeładowywaniu contentu
+
+
+
 # Zadanie rekrutacyjne
 
 **Cel:**
