@@ -7,6 +7,7 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
+        "test": "vitest",
         "lint": "eslint src/**/*.{ts,tsx}",
         "lint:fix": "eslint --fix src/**/*.{ts,tsx}",
         "format": "prettier --write src/**/*.{ts,tsx,css,scss} --config ./.prettierrc"
@@ -22,6 +23,7 @@
     },
     "devDependencies": {
         "@hookform/resolvers": "^3.2.0",
+        "@testing-library/react": "^14.0.0",
         "@types/react": "^18.2.15",
         "@types/react-dom": "^18.2.7",
         "@types/uuid": "^9.0.6",
@@ -37,8 +39,10 @@
         "eslint-plugin-sort-destructure-keys": "^1.5.0",
         "eslint-plugin-typescript-sort-keys": "^3.1.0",
         "eslint-plugin-unused-imports": "^3.0.0",
+        "jsdom": "^22.1.0",
         "sass": "^1.69.4",
         "typescript": "^5.0.2",
-        "vite": "^4.4.5"
+        "vite": "^4.4.5",
+        "vitest": "^0.34.6"
     }
 }
