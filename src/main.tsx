@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
-
 import App from './App.tsx'
 import { store } from './redux/index.ts'
 import ErrorBoundary from './components/ErrorBoundry/ErrorBoundry.tsx'
+import "./globalStyles/main.scss"
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>

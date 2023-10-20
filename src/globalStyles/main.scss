@@ -1,0 +1,11 @@
+@import './partials/normalize.scss';
+@import './partials/variables.scss';
+
+body{
+    background-color: $backgroundColor;
+}
+
+#root{
+    max-width: 95%;
+    margin: 0 auto;
+}
