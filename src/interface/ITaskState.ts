@@ -1,3 +1,6 @@
+/**
+ * single task interface
+ */
 export interface ITaskElement {
     description: string,
     id: string,
@@ -5,6 +8,7 @@ export interface ITaskElement {
     title: string,
 }
 
+/** interface for tasks slice */
 export interface ITaskState {
     tasks: ITaskElement[] | null;
 }

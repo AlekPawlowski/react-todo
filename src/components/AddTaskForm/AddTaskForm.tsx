@@ -36,7 +36,7 @@ export const AddTaskForm = () => {
         dispatch(addTask(newTask))
     }
 
-    return <form className="add_task_form" onSubmit={handleSubmit(onSubmit)}>
+    return <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
         <h1>Dodaj zadanie</h1>
         {
             addTaskFormFields.map((field) => {
