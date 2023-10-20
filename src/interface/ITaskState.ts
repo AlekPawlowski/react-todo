@@ -12,3 +12,11 @@ export interface ITaskElement {
 export interface ITaskState {
     tasks: ITaskElement[] | null;
 }
+
+/**
+ * redux update payload action interface
+ */
+export interface IUpdatePayloadAction {
+    id: string;
+    status: ITaskElement['status']
+}

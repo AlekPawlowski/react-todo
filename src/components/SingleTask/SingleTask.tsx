@@ -1,4 +1,6 @@
+import { useDispatch } from "react-redux";
 import { ITaskElement } from "../../interface/ITaskState"
+import { deleteTask, updateStatus } from "../../redux/taskSlice";
 
 /**
  * component of the single task
@@ -7,19 +9,22 @@ import { ITaskElement } from "../../interface/ITaskState"
  * delete task
  */
 export const SingleTask = ({ description, id, status, title }: ITaskElement) => {
+    const dispatch = useDispatch();
     const statusClass = status === "done" ? "done" : "todo";
+    const statusButtonText = status === "done" ? "Oznacz jako niezrobione" : "Oznacz jako zrobione";
+
     const changeTaskStatus = () => {
-        console.log("complete task btn clicked", id);
-    
+        dispatch(updateStatus({id, status}));
     }
-    const deleteTask = () => {
+    const deleteTaskAction = () => {
         console.log("delete task btn clicked", id);
+        dispatch(deleteTask(id));
     }
 
     return <section className={`single_task ${statusClass}`}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <button onClick={changeTaskStatus}>Done btn</button>
-        <button onClick={deleteTask}>Delete task</button>
+        <button onClick={changeTaskStatus}>{statusButtonText}</button>
+        <button onClick={deleteTaskAction}>Delete task</button>
     </section>
 }
