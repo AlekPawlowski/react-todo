@@ -11,8 +11,6 @@ import { TFormField } from "../../interface/TFormField";
  */
 export function FormField<T extends FieldValues>({errors, field, register} : TFormField<T>) {
     const {description, label, placeholder} = field;
-    console.log(errors);
-    
     return <fieldset className="form_fieldset">
         <label htmlFor={label}>{description}</label>
         <input 

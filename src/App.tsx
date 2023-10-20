@@ -1,11 +1,11 @@
 import { Fragment } from 'react'
 import './App.scss'
-import { AddTask } from './components/AddTaskForm/AddTask'
+import { AddTaskForm } from './components/AddTaskForm/AddTaskForm'
 
 
 const App = () => {
     return <Fragment>
-        <AddTask />
+        <AddTaskForm />
     </Fragment>
 }
 

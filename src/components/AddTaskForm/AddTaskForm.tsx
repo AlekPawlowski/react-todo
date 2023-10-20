@@ -3,11 +3,15 @@ import { SubmitHandler, useForm } from "react-hook-form"
 import { IAddTaskSchema, addTaskSchema } from "../../validations/formSchema"
 import { addTaskFormFields } from "../../formFields/addTaskFields"
 import { FormField } from "../FormField/FormField"
+import { ITaskElement } from "../../interface/ITaskState"
+import { useDispatch } from "react-redux"
+import { addTask } from "../../redux/taskSlice"
 
 /**
  * component with form that will add new task to reducer.
  */
-export const AddTask = () => {
+export const AddTaskForm = () => {
+    const dispatch = useDispatch();
     // initlize react hook form
     const {
         formState: { errors },
@@ -21,7 +25,13 @@ export const AddTask = () => {
      * after correct submiting, push element to the reducer
     */
     const onSubmit: SubmitHandler<IAddTaskSchema> = async (formData) => {
-        console.log("submit", formData);
+        const {description, head} = formData
+        const newTask: ITaskElement = {
+            description: description,
+            status: "todo",
+            title: head,
+        }
+        dispatch(addTask(newTask))
     }
 
     return <form className="add_task_form" onSubmit={handleSubmit(onSubmit)}>
