@@ -13,4 +13,9 @@ const getLocalStorageData = () => {
     return JSON.parse(localStorageTasks) as ITaskElement[];
 };
 
-export { getLocalStorageData };
+const saveToLocalStorage = (state: ITaskElement[] | null) => {
+    const serilizedState = JSON.stringify(state);
+    localStorage.setItem(LOCALSTORAGE_DATA_NAME, serilizedState);
+}
+
+export { saveToLocalStorage, getLocalStorageData };

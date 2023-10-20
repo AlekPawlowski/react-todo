@@ -6,6 +6,7 @@ import { FormField } from "../FormField/FormField"
 import { ITaskElement } from "../../interface/ITaskState"
 import { useDispatch } from "react-redux"
 import { addTask } from "../../redux/taskSlice"
+import { v4 as uuidv4 } from 'uuid';
 
 /**
  * component with form that will add new task to reducer.
@@ -25,9 +26,10 @@ export const AddTaskForm = () => {
      * after correct submiting, push element to the reducer
     */
     const onSubmit: SubmitHandler<IAddTaskSchema> = async (formData) => {
-        const {description, head} = formData
+        const {description, head} = formData;
         const newTask: ITaskElement = {
             description: description,
+            id: uuidv4(),
             status: "todo",
             title: head,
         }
