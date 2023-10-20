@@ -5,7 +5,7 @@ import { addTaskFormFields } from "../../formFields/addTaskFields"
 import { FormField } from "../FormField/FormField"
 
 /**
- * component with form that will add new task to our list.
+ * component with form that will add new task to reducer.
  */
 export const AddTask = () => {
     // initlize react hook form
@@ -24,7 +24,7 @@ export const AddTask = () => {
         console.log("submit", formData);
     }
 
-    return <form onSubmit={handleSubmit(onSubmit)}>
+    return <form className="add_task_form" onSubmit={handleSubmit(onSubmit)}>
         <h1>Dodaj zadanie</h1>
         {
             addTaskFormFields.map((field) => {
@@ -38,6 +38,6 @@ export const AddTask = () => {
             })
         }
         {/* default type of button is submiting so there is no need to add type */}
-        <button>Dodaj zadanie</button>
+        <button className="confirmation_button">Dodaj zadanie</button>
     </form>
 }

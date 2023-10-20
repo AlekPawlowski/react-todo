@@ -1,8 +1,4 @@
-export type TAddTaskFormFields = {
-    description: string,
-    label: string,
-    placeholder: string,
-}
+import { TAddTaskFormFields } from "../interface/TAddTaskFormFields";
 
 export const addTaskFormFields: TAddTaskFormFields[] = [
     {
