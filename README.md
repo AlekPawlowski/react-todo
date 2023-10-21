@@ -24,12 +24,11 @@ Tech  | Description
 [SCSS](https://sass-lang.com/) | CSS preprocessor
 [UUID](https://github.com/uuidjs/uuid#readme) | Library for creating UUID
 
-# Installation
+# Instalacja i uruchomienie
 ```bash
 git clone https://github.com/AlekPawlowski/users_list_app.git
-
+# ponizsze komendy wykonać w katalogu projektu
 npm install
-
 npm run dev
 ```
 

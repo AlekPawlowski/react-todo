@@ -8,7 +8,7 @@
     gap: calc($mobileSectionInnerSpace / 2);
     h3{
         font-size: $mobileLargeSize;
-        color: var(--turquoiseColor);
+        color: var(--mainFontColor);
         margin: 0;
     }
     
@@ -18,11 +18,11 @@
     }
     p{
         font-size: $mobileMediumSize;
-        color: var(--mainFontColor);
+        color: var(--secondaryFontColor);
         margin: 0;
     }
     &.done{
-        // background-color: var(--turquoiseColor);
+        // background-color: var(--mainFontColor);
         opacity: .6;
         h3,
         p{

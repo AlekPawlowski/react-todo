@@ -9,13 +9,13 @@
     margin-bottom: $mobileSectionInnerSpace;
     label{
         font-size: $mobileLargeSize;
-        color: var(--turquoiseColor);
+        color: var(--mainFontColor);
     }
     input{
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid var(--turquoiseColor);
-        color: var(--mainFontColor);
+        border-bottom: 1px solid var(--mainFontColor);
+        color: var(--secondaryFontColor);
         transition: .5s all;
         font-size: $mobileMediumSize;
         padding-bottom: 10px;
@@ -23,11 +23,11 @@
         &:focus-visible{
             border: none;
             outline: none;
-            border-bottom: 1px solid var(--turquoiseColor);
+            border-bottom: 1px solid var(--mainFontColor);
         }
         &::placeholder{
             font-size: $mobileMediumSize;
-            color: var(--mainFontColor);
+            color: var(--secondaryFontColor);
         }
     }
     p{

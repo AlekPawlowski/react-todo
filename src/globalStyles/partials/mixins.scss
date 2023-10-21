@@ -1,8 +1,8 @@
 @mixin button() {
     padding: $buttonMobilePadding;
-    border: 1px solid var(--turquoiseColor);
+    border: 1px solid var(--mainFontColor);
     border-radius: $mobileBorderRadius;
-    color: var(--turquoiseColor);
+    color: var(--mainFontColor);
     font-size: $mobileButton;
     background-color: transparent;
     transition: .3s all;

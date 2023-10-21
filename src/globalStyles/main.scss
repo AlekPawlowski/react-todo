@@ -14,13 +14,13 @@ here set default values whitch are dark mode
 :root{
     --backgroudColor: "#0a192f",
     --borderColor: "black",
-    --mainFontColor: "#f3f4f4",
-    --turquoiseColor: "#12e1b9",
+    --secondaryFontColor: "#f3f4f4",
+    --mainFontColor: "#12e1b9",
 }
 
 body {
     background-color: var(--backgroudColor);
-    color: var(--mainFontColor);
+    color: var(--secondaryFontColor);
     font-family: "Ubuntu", "Arial", sans-serif;
     transition: .5s all;
 }
