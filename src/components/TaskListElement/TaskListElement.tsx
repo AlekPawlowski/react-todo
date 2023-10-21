@@ -15,11 +15,13 @@ export const TaskListElement = ({list, title}: ITsakListElement) => {
 
     return <section className={`list list_${title}`}>
         <h2>{title} List</h2>
+        <section className="list_elements_container">
         {
             list.map((item) =>{
                 const {id} = item;
                 return <SingleTask key={id} {...item} />
             })
         }
+        </section>
     </section>
 }

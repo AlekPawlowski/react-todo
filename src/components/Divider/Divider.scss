@@ -1,0 +1,7 @@
+@import '../../globalStyles/partials/variables.scss';
+
+@media screen and (min-width: $desktop) {
+    .divider{
+        border-bottom: 1px solid var(--turquoiseColor);
+    }
+}

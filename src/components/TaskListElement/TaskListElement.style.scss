@@ -15,3 +15,16 @@
         border-bottom: 1px solid var(--turquoiseColor);
     }
 }
+
+@media screen and (min-width: $desktop) {
+    .list{
+        border: none;
+    }
+    .list_elements_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax($desktopGridBoxSize, 1fr));
+        grid-row-gap: 50px; 
+        grid-column-gap: 100px;
+        align-items: stretch;
+    }
+}

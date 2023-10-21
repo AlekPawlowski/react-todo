@@ -31,3 +31,8 @@
         
     }
 }
+@media screen and (min-width: $desktop) {
+    .single_task{
+        justify-content: space-between;
+    }
+}

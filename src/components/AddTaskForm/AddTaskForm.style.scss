@@ -18,3 +18,14 @@ h1{
     margin-left: auto;
     margin-top: $mobileSectionInnerSpace;
 }
+
+@media screen and (min-width: $desktop) {
+    .form_container{
+        border: none;
+        width: 60%;
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+    }
+}

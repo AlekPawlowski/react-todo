@@ -5,7 +5,12 @@
     color: var(--turquoiseColor);
     font-size: $mobileButton;
     background-color: transparent;
+    transition: .3s all;
     &:hover{
         background-color: $lightGrey;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: $desktopButton;
+        border-radius: $desktopBorderRadius;
     }
 }

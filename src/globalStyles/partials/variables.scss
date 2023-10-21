@@ -3,13 +3,20 @@ $desktop: 1024px;
 
 //global
 $mobileBorderRadius: 25px;
-
+$desktopBorderRadius: 15px;
+$desktopGridBoxSize: 300px;
 // font size
+// mobile
 $mobileHeader: 32px;
 $mobileButton: 18px;
 $mobileMediumSize: 18px;
 $mobileLargeSize: 22px;
 
+// desktop
+$desktopHeader: 24px;
+$desktopButton: 14px;
+$dektopMediumSize: 14px; 
+$desktopLargeSize: 16px;
 
 // colors
 $lightGrey: #fff3; // secondary font color

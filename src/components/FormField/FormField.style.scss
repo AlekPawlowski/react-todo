@@ -36,3 +36,11 @@
         font-size: $mobileMediumSize;
     }
 }
+
+@media screen and (min-width: $desktop) {
+    .form_fieldset{
+        input{
+            width: 50%;
+        }
+    }
+}
