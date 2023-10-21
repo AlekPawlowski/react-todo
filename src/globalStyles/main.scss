@@ -5,6 +5,7 @@ just to show that I can handle both of them.
 
 @import "./partials/normalize.scss";
 @import "./partials/variables.scss";
+@import "./partials/mixins.scss";
 
 /** 
 set variables specifed in config.ts file in THEMES variable
@@ -14,17 +15,21 @@ here set default values whitch are dark mode
     --backgroudColor: "#0a192f",
     --borderColor: "black",
     --mainFontColor: "#f3f4f4",
+    --turquoiseColor: "#12e1b9",
 }
 
 body {
     background-color: var(--backgroudColor);
     color: var(--mainFontColor);
-    border-color: var(--borderColor);
     font-family: "Ubuntu", "Arial", sans-serif;
     transition: .5s all;
 }
 
 #root {
     max-width: 95%;
-    margin: 0 auto;
+    margin: $spaceBetweenSections auto;
+}
+
+button{
+    @include button();
 }

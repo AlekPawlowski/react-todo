@@ -2,6 +2,7 @@
 
 import { FieldValues, Path } from "react-hook-form";
 import { TFormField } from "../../interface/TFormField";
+import './FormField.style.scss';
 
 /**
  * Component that stands for single form field
@@ -12,7 +13,7 @@ import { TFormField } from "../../interface/TFormField";
 export function FormField<T extends FieldValues>({errors, field, register} : TFormField<T>) {
     const {description, label, placeholder} = field;
     return <fieldset className="form_fieldset">
-        <label htmlFor={label}>{description}</label>
+        <label htmlFor={label}>{description}:</label>
         <input 
             id={label} 
             placeholder={placeholder} 

@@ -2,8 +2,24 @@
 $tablet: 768px;
 $desktop: 1024px;
 
-// colors
-$turquoise: #12e1b9; // secondary font color
+//global
+$mobileBorderRadius: 25px;
 
-// margins
-$spaceBetweenSections: 24px;
+// font size
+$mobileHeader: 28px;
+$mobileButton: 18px;
+$mobileMediumSize: 18px;
+$mobileLargeSize: 20px;
+
+
+// colors
+$lightGrey: #fff3; // secondary font color
+$errorRed: red;
+
+// spaces
+$spaceBetweenSections: 32px;
+$mobileSectionInnerSpace: 24px;
+
+// button
+$buttonMobilePadding: 8px 20px;
+$buttonDesktopPadding: 10px 20px;

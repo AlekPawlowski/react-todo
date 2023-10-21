@@ -7,6 +7,7 @@ import { ITaskElement } from "../../interface/ITaskState"
 import { useDispatch } from "react-redux"
 import { addTask } from "../../redux/taskSlice"
 import { v4 as uuidv4 } from 'uuid';
+import './AddTaskForm.style.scss';
 
 /**
  * component with form that will add new task to reducer.

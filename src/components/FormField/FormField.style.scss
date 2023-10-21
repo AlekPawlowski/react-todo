@@ -1,0 +1,37 @@
+@import '../../globalStyles/partials/variables.scss';
+
+.form_fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc($mobileSectionInnerSpace / 2);
+    padding: 0;
+    margin-bottom: $mobileSectionInnerSpace;
+    label{
+        font-size: $mobileLargeSize;
+        color: var(--turquoiseColor);
+    }
+    input{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $lightGrey;
+        color: var(--mainFontColor);
+        transition: .5s all;
+        font-size: $mobileMediumSize;
+        &:focus,
+        &:focus-visible{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid var(--turquoiseColor);
+        }
+        &::placeholder{
+            font-size: $mobileMediumSize;
+            color: $lightGrey;
+        }
+    }
+    p{
+        margin: 0;
+        color: $errorRed;
+        font-size: $mobileMediumSize;
+    }
+}

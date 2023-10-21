@@ -1,0 +1,11 @@
+@mixin button() {
+    padding: $buttonMobilePadding;
+    border: 1px solid var(--turquoiseColor);
+    border-radius: $mobileBorderRadius;
+    color: var(--turquoiseColor);
+    font-size: $mobileButton;
+    background-color: transparent;
+    &:hover{
+        background-color: $lightGrey;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../globalStyles/partials/variables.scss';
+
+.form_container{
+    margin: $spaceBetweenSections 0;
+    padding: $mobileSectionInnerSpace;
+    border: 1px solid var(--turquoiseColor);
+    border-radius: $mobileBorderRadius;
+}
+
+h1{
+    // text-align: center;
+    font-size: $mobileHeader;
+    color: var(--turquoiseColor);
+    margin: 0 auto $mobileSectionInnerSpace;
+}
+
+.confirmation_button{
+    display: block;
+    margin-left: auto;
+    margin-top: $mobileSectionInnerSpace;
+}
