@@ -1,0 +1,10 @@
+@import '../../globalStyles/partials/variables.scss';
+
+.information_text{
+    font-size: $mobileLargeSize;
+    line-height: 160%;
+    color: var(--mainFontColor);
+    text-align: center;
+    max-width: 80%;
+    margin: $spaceBetweenSections auto;
+}

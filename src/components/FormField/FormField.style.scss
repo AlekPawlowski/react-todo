@@ -14,10 +14,11 @@
     input{
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid $lightGrey;
+        border-bottom: 1px solid var(--turquoiseColor);
         color: var(--mainFontColor);
         transition: .5s all;
         font-size: $mobileMediumSize;
+        padding-bottom: 10px;
         &:focus,
         &:focus-visible{
             border: none;
@@ -26,7 +27,7 @@
         }
         &::placeholder{
             font-size: $mobileMediumSize;
-            color: $lightGrey;
+            color: var(--mainFontColor);
         }
     }
     p{

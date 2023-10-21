@@ -1,0 +1,33 @@
+@import '../../globalStyles/partials/variables.scss';
+
+.single_task{
+    padding: $mobileSectionInnerSpace 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: calc($mobileSectionInnerSpace / 2);
+    h3{
+        font-size: $mobileLargeSize;
+        color: var(--turquoiseColor);
+        margin: 0;
+    }
+    
+    .button_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        font-size: $mobileMediumSize;
+        color: var(--mainFontColor);
+        margin: 0;
+    }
+    &.done{
+        // background-color: var(--turquoiseColor);
+        opacity: .6;
+        h3,
+        p{
+            text-decoration: line-through;
+        }
+        
+    }
+}

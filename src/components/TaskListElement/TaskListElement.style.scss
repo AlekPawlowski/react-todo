@@ -1,0 +1,17 @@
+@import '../../globalStyles/partials/variables.scss';
+
+.list{
+    padding: $mobileSectionInnerSpace;
+    border: 1px solid var(--turquoiseColor);
+    border-radius: $mobileBorderRadius;
+    margin: $spaceBetweenSections 0;
+    h2{
+        font-size: $mobileHeader;
+        color: var(--turquoiseColor);
+        margin: 0;
+        margin-top: $mobileSectionInnerSpace;
+    }
+    & > :not(:first-child):not(:last-child) {
+        border-bottom: 1px solid var(--turquoiseColor);
+    }
+}

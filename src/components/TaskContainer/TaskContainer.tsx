@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import { RootState } from "../../redux";
 import { TaskList } from "../TaskList/TaskList";
+import { InformationElement } from "../InformationElement/InformationElement";
 
 /**
  * Main view where there is import for current tasks and
@@ -10,7 +11,7 @@ import { TaskList } from "../TaskList/TaskList";
 export const TaskContainer = () => {
     const store = useSelector((state: RootState) => state.tasks.tasks);
     
-    if(!store) return <p>There is no tasks right now, pleasy add new one.</p>
+    if(!store) return <InformationElement>There is no tasks right now, pleasy add new one.</InformationElement>
 
     return <section className="list_container">
         <TaskList list={store}/>

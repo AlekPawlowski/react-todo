@@ -1,5 +1,7 @@
 import { ITsakListElement } from "../../interface/ITaskList";
+import { InformationElement } from "../InformationElement/InformationElement";
 import { SingleTask } from "../SingleTask/SingleTask";
+import './TaskListElement.style.scss';
 
 /**
  * Component that render part of the list
@@ -9,7 +11,7 @@ import { SingleTask } from "../SingleTask/SingleTask";
  * expanded for new functionality
  */
 export const TaskListElement = ({list, title}: ITsakListElement) => {
-    if(list.length === 0) return <p>Currently, there is no {title.toLocaleLowerCase()} task elements</p>
+    if(list.length === 0) return <InformationElement>Currently, there is no {title.toLocaleLowerCase()} task elements</InformationElement>
 
     return <section className={`list list_${title}`}>
         <h2>{title} List</h2>
