@@ -18,7 +18,6 @@ export const SingleTask = ({ description, id, status, title }: ITaskElement) => 
         dispatch(updateStatus({id, status}));
     }
     const deleteTaskAction = () => {
-        console.log("delete task btn clicked", id);
         dispatch(deleteTask(id));
     }
 

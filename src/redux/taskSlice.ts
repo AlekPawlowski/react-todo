@@ -23,6 +23,7 @@ export const taskSlice = createSlice({
                 // add to existing tasks
                 state.tasks = [...state.tasks, action.payload];
             }
+            alert("Task został dodany")
         },
         /**
          * delete task element by payload id
@@ -40,6 +41,7 @@ export const taskSlice = createSlice({
                     state.tasks = null;
                 }
             }
+            alert("Task został usunięty");
         },
         /**
          * payload need to get id and current status
@@ -54,6 +56,7 @@ export const taskSlice = createSlice({
                 const task = state.tasks.find(task => task.id === elementId);
                 if(task){
                     task.status = elementStatus === "done" ? "todo" : "done";
+                    alert(`Task został oznaczony jako ${task.status}`)
                 }
             }
         }

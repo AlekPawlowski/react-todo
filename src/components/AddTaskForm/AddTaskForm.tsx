@@ -19,6 +19,7 @@ export const AddTaskForm = () => {
         formState: { errors },
         handleSubmit,
         register,
+        reset
     } = useForm<IAddTaskSchema>({
         resolver: zodResolver(addTaskSchema)
     })
@@ -35,6 +36,7 @@ export const AddTaskForm = () => {
             title: head,
         }
         dispatch(addTask(newTask))
+        reset();
     }
 
     return <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
