@@ -5,14 +5,17 @@ import App from './App.tsx'
 import { store } from './redux/index.ts'
 import ErrorBoundary from './components/ErrorBoundry/ErrorBoundry.tsx'
 import "./globalStyles/main.scss"
+import { ThemeSelectContextProvider } from './context/ThemeSelectContext.tsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <ErrorBoundary>
-            <Provider store={store}>
-                <App />
-            </Provider>
+            <ThemeSelectContextProvider>
+                <Provider store={store}>
+                    <App />
+                </Provider>
+            </ThemeSelectContextProvider>
         </ErrorBoundary>
     </React.StrictMode>,
 )

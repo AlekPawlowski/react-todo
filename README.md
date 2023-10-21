@@ -4,7 +4,7 @@
 * większa szybkość w przeładowywaniu contentu
 
 # Opis projektu
-Aplikacja TODO to prosta aplikacja do zarządzania zadaniami. Użytkownicy mogą dodawać nowe zadania, oznaczać je jako zakończone, oraz usuwać niepotrzebne zadania. Aplikacja ma na celu pomóc użytkownikom w organizacji ich obowiązków i codziennych zadań.
+Aplikacja TODO to prosta aplikacja do zarządzania zadaniami. Użytkownicy mogą dodawać nowe zadania, oznaczać je jako zakończone, oraz usuwać niepotrzebne zadania i zapisywać je w pamięci przeglądarki za pomocą localStorage. Aplikacja ma na celu pomóc użytkownikom w organizacji ich obowiązków i codziennych zadań.
 
 # Requirements
 NPM -> pakage menager
@@ -34,4 +34,3 @@ npm run dev
 ```
 
 # Live
-https://ap-users-list-app.vercel.app/
