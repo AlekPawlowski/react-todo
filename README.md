@@ -33,3 +33,7 @@ npm run dev
 ```
 
 # Live
+[live adress](https://ap-to-do-app.netlify.app/)
+
+# Testowany komponent:
+TaskListElement (src/components/TaskListElement/TaskListElement.tsx);
