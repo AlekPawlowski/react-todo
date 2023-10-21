@@ -11,7 +11,7 @@ import { InformationElement } from "../InformationElement/InformationElement";
 export const TaskContainer = () => {
     const store = useSelector((state: RootState) => state.tasks.tasks);
     
-    if(!store) return <InformationElement>There is no tasks right now, pleasy add new one.</InformationElement>
+    if(!store) return <InformationElement>There is no tasks right now, please add new one.</InformationElement>
 
     return <section className="list_container">
         <TaskList list={store}/>
