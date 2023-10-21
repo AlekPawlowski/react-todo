@@ -1,8 +1,14 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { describe, expect, test } from "vitest";
+import { describe, expect, test, vi } from "vitest";
 import { ITaskElement } from "../../interface/ITaskState";
 import { TaskListElement } from './TaskListElement';
 import { render, screen } from "@testing-library/react";
+
+vi.mock('react-redux', () => {
+    return {
+        useDispatch: () => {}
+    }
+});
 
 describe("test render of Task list element", () => {
     test("corectly render list element data data", () => {
@@ -15,8 +21,8 @@ describe("test render of Task list element", () => {
                 title: "Task title"
             }
         ]
-        const wrapper = render(<TaskListElement list={list} title="Test title"/>)
-        
+        const wrapper = render(<TaskListElement list={list} title="Test title" />)
+
         // act -> do stuff that we wanna test, like find word or execute some function
         // first our main title
         const title = screen.getByText(/Test title List/);
@@ -32,7 +38,7 @@ describe("test render of Task list element", () => {
     test("check what happens on empty list", () => {
         // arrange
         const list: ITaskElement[] = [];
-        const wrapper = render(<TaskListElement list={list} title="empty title"/>)
+        const wrapper = render(<TaskListElement list={list} title="empty title" />)
 
         // act
         const message = screen.getByText(/Currently, there is no empty title/);
