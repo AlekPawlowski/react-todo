@@ -1,5 +1,8 @@
 import './Divider.scss';
 
+/**
+ * Divider component to seperate sections
+ */
 export const Divider = () => {
-    return <div className="divider"></div>
+    return <hr className="divider"></hr>
 }

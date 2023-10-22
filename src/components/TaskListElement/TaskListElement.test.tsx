@@ -35,7 +35,7 @@ describe("test render of Task list element", () => {
         expect(taskTitle).toBeDefined();
     })
 
-    test("check what happens on empty list", () => {
+    test("on empty list should display fallback data", () => {
         // arrange
         const list: ITaskElement[] = [];
         const wrapper = render(<TaskListElement list={list} title="empty title" />)

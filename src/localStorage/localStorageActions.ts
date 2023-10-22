@@ -10,7 +10,14 @@ import { ITaskElement } from "../interface/ITaskState";
 const getLocalStorageData = () => {
     const localStorageTasks = localStorage.getItem(LOCALSTORAGE_DATA_NAME);
     if(!localStorageTasks) return null;
-    return JSON.parse(localStorageTasks) as ITaskElement[];
+    let parsedData = [];
+    try {
+        parsedData = JSON.parse(localStorageTasks);
+    } catch (error) {
+        console.error(`Error in parsing data - ${error}`);
+        parsedData = [];
+    }
+    return parsedData as ITaskElement[];
 };
 
 const saveToLocalStorage = (state: ITaskElement[] | null) => {

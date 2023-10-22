@@ -7,7 +7,7 @@
 Aplikacja TODO to prosta aplikacja do zarządzania zadaniami. Użytkownicy mogą dodawać nowe zadania, oznaczać je jako zakończone, oraz usuwać niepotrzebne zadania i zapisywać je w pamięci przeglądarki za pomocą localStorage. Aplikacja ma na celu pomóc użytkownikom w organizacji ich obowiązków i codziennych zadań.
 
 # Requirements
-NPM -> pakage menager
+NPM -> package menager
 
 # Tech stack:
 Tech  | Description
@@ -16,8 +16,8 @@ Tech  | Description
 [Prettier](https://prettier.io/)  | Code formater
 [Typescript](https://www.typescriptlang.org/) | JavaScript supset language
 [Styled Components](https://styled-components.com/) | CSS in JavaScript
-[React](https://react.dev//) | Server-side rendering based on React
-[React-hook-form](https://react-hook-form.com/) | Form validation for React
+[React](https://react.dev//) | React library to create graphic interfaces
+[React-hook-form](https://react-hook-form.com/) | Library for managing forms
 [Zod](https://zod.dev/) | Schema declaration and validation libarary
 [Redux](https://redux.js.org/) | State menager for React
 [vitest](https://vitest.dev/) | Test framework
@@ -38,9 +38,10 @@ npm run build
 npm run test
 ```
 
-# 
+# Localhost adress (po uruchomieniu lokalnie):
+http://localhost:5173/
 
-# Live
+# Live adress
 [live adress](https://ap-to-do-app.netlify.app/)
 
 # Testowany komponent:

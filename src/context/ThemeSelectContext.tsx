@@ -12,8 +12,8 @@ const setCSSVariables = (theme: ISingleTheme) => {
 };
 
 export const ThemeSelectContextProvider = ({ children }: { children: React.ReactNode }) => {
-    const [themeName, setThemeName] = useState("dark");
-    const [theme, setTheme] = useState(THEMES[themeName  as keyof IThemes]);
+    const [themeName, setThemeName] = useState<keyof IThemes>("dark");
+    const [theme, setTheme] = useState(THEMES[themeName]);
 
     const toogleTheme = () => {
         if( theme === THEMES.dark) {
@@ -27,7 +27,7 @@ export const ThemeSelectContextProvider = ({ children }: { children: React.React
         
     useEffect(() => {
         setCSSVariables(theme);
-    })
+    }, [theme])
 
     return <ThemeSelectContext.Provider value={{ themeName, toogleTheme }}>
         {children}
