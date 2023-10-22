@@ -28,9 +28,17 @@ Tech  | Description
 ```bash
 git clone https://github.com/AlekPawlowski/users_list_app.git
 # ponizsze komendy wykonać w katalogu projektu
+# pobranie paczek
 npm install
+# uruchomienie projektu lokalnie
 npm run dev
+# zbudowanie paczki
+npm run build
+# pusczenie testów
+npm run test
 ```
+
+# 
 
 # Live
 [live adress](https://ap-to-do-app.netlify.app/)
